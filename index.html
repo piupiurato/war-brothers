@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>War Brothers - Deveres do Membro</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1a1a1a;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: green;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 300px;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: green;
+    }
+    footer {
+      background-color: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-wb.png" alt="War Brothers Logo">
+    <h1>War Brothers [WB]</h1>
+    <p><em>"Na guerra, não somos soldados... somos irmãos."</em></p>
+  </header>
+
+  <nav>
+    <a href="index.html">Boas-vindas</a>
+    <a href="regras.html">Regras</a>
+    <a href="deveres.html">Deveres</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="hierarquia.html">Hierarquia</a>
+    <a href="atribuir.html">como são atribuidos os cargos?</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>💌 Boas-vindas</h2>
+      <p>Se estás a ler isto, é porque és um membro da nossa tribo ou de uma academia. Bem-vindo à <strong>War Brothers [WB]</strong>, onde a lealdade, a estratégia e a entreajuda são a base do nosso sucesso.</p>
+    </section>
+
+  <footer>
+    War Brothers [WB] &copy; 2025 - Forjados na guerra, unidos pela lealdade.
+  </footer>
+
+ <audio id="musicaFundo" src="musica.mp3" loop></audio>
+
+<script>
+  const musica = document.getElementById("musicaFundo");
+
+  function iniciarMusica() {
+    musica.play().catch(e => {
+      console.log("Não foi possível tocar a música automaticamente:", e);
+    });
+    // Remove os event listeners para não disparar várias vezes
+    document.removeEventListener("click", iniciarMusica);
+    document.removeEventListener("touchstart", iniciarMusica);
+  }
+
+  // Adiciona eventos para o primeiro clique ou toque do utilizador
+  document.addEventListener("click", iniciarMusica);
+  document.addEventListener("touchstart", iniciarMusica);
+</script>
+
+</script>
+
+</body>
+</html>

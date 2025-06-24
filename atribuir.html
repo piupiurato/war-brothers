@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>War Brothers - Deveres do Membro</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1a1a1a;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: green;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 300px;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: green;
+    }
+    footer {
+      background-color: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-wb.png" alt="War Brothers Logo">
+    <h1>War Brothers [WB]</h1>
+    <p><em>"Na guerra, não somos soldados... somos irmãos."</em></p>
+  </header>
+
+  <nav>
+    <a href="index.html">Boas-vindas</a>
+    <a href="regras.html">Regras</a>
+    <a href="deveres.html">Deveres</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="hierarquia.html">Hierarquia</a>
+    <a href="atribuir.html">como são atribuidos os cargos?</a>
+  </nav>
+
+<main>
+      <section>
+            <h1>COMO SÃO ATRIBUIDOS OS CARGOS?</h1>
+
+            <h2>🛡️ CONSELHO DE GUERRA / BARÃO</h2>
+            <p>Como se adquire:</p>
+            <p>Ser altamente ativo nos primeiros 5 dias.</p>
+            <p>Estar no top 10 da tribo em pontos e tropas.</p>
+            <p>Ajudar consistentemente os membros com tropas e conselhos.</p>
+            <p>Participar ativamente na organização da tribo (ex: fórum, estratégia).</p>
+            <p>Promoção: Nomeado diretamente pelo Duque após votação interna (pode ser informal via chat).</p>
+            
+            <h2>⚔️ COMANDANTE OFENSIVO / DEFENSIVO</h2>
+            <p>Como se adquire:</p>
+            <p>Ter histórico comprovado em coordenação de ataques (ou demonstrar no mundo atual).</p>
+            <p>Participar em pelo menos 2 operações tribais bem-sucedidas.</p>
+            <p>Disponibilidade para coordenar horários com o grupo.</p>
+            <p>Promoção: Atribuído por um Barão ou Duque com base no desempenho e confiança.</p>
+            
+            <h2>📬 DIPLOMATA</h2>
+            <p>Como se adquire:</p>
+            <p>Excelente comunicação e bom português (ou inglês, para contactos externos).</p>
+            <p>Conhecimento de diplomacia no Tribal Wars.</p>
+            <p>Calma, paciência e bom senso.</p>
+            <p>Promoção: Avaliado pelo Duque com base em testes de comunicação ou experiência prévia.</p>
+            
+            <h2>🧠 ESTRATÉGA / ANALISTA</h2>
+            <p>Como se adquire:</p>
+            <p>Demonstrar visão tática clara em ataques/defesas no fórum.</p>
+            <p>Criar planos de nobreza, fakes ou simulações úteis para a tribo.</p>
+            <p>Ajudar outros jogadores a evoluírem.</p>
+            <p>Promoção: Nomeado por um comandante ou barão com aprovação do Duque.</p>
+            
+            <h2>🔥 SPRINTER WB</h2>
+            <p>Como se adquire:</p>
+            <p>Estar no top 3 da tribo em pontos e tropas nos primeiros 3 dias.</p>
+            <p>Participar em ações coordenadas desde o início.</p>
+            <p>Promoção: Automática com base nas estatísticas (verificadas manualmente pelo Conselho de Guerra).</p>
+            
+            <h2>🏹 GUERREIRO WB</h2>
+            <p>Como se adquire:</p>
+            <p>Manter-se ativo diariamente.</p>
+            <p>Ajudar com tropas e recursos quando pedido.</p>
+            <p>Participar nos fóruns e responder às mensagens coletivas.</p>
+            <p>Promoção: Automática após 5-7 dias de atividade consistente.</p>
+            
+            <h2>🛌 RECRUTA / EM OBSERVAÇÃO</h2>
+            <p>Como se cai aqui:</p>
+            <p>Inatividade sem aviso por mais de 2 dias.</p>
+            <p>Má conduta, desrespeito ou não cumprimento de ordens.</p>
+            <p>Falta de participação em ações conjuntas.</p>
+            <p>Possível saída: Expulsão após 3 dias sem melhorias.</p>
+    </section>
+</main>
+
+<footer>
+    War Brothers [WB] &copy; 2025 - Forjados na guerra, unidos pela lealdade.
+  </footer>
+  <audio id="musicaFundo" src="musica.mp3" loop></audio>
+
+<script>
+  const musica = document.getElementById("musicaFundo");
+
+  function iniciarMusica() {
+    musica.play().catch(e => {
+      console.log("Não foi possível tocar a música automaticamente:", e);
+    });
+    // Remove os event listeners para não disparar várias vezes
+    document.removeEventListener("click", iniciarMusica);
+    document.removeEventListener("touchstart", iniciarMusica);
+  }
+
+  // Adiciona eventos para o primeiro clique ou toque do utilizador
+  document.addEventListener("click", iniciarMusica);
+  document.addEventListener("touchstart", iniciarMusica);
+</script>
+
+
+</body>
+</html>

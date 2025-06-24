@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>War Brothers - Deveres do Membro</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1a1a1a;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: green;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 300px;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: green;
+    }
+    footer {
+      background-color: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-wb.png" alt="War Brothers Logo">
+    <h1>War Brothers [WB]</h1>
+    <p><em>"Na guerra, não somos soldados... somos irmãos."</em></p>
+  </header>
+
+  <nav>
+    <a href="index.html">Boas-vindas</a>
+    <a href="regras.html">Regras</a>
+    <a href="deveres.html">Deveres</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="hierarquia.html">Hierarquia</a>
+    <a href="atribuir.html">como são atribuidos os cargos?</a>
+  </nav>
+
+    <main>
+      <section>
+        <h1>🏰 HIERARQUIA DA TRIBO – WAR BROTHERS [WB]</h1>
+
+        <h2>👑 REI / DUQUE (REI piupiurato)</h2>
+        <p>Permissão no jogo: Duque</p>
+        <p>Função: Liderança máxima, decisões finais sobre tudo, controlo completo.</p>
+        <h3>Título: REI piupiurato | Fundador</h3>
+        
+        <h2>🛡️ CONSELHO DE GUERRA / BARÕES (2-3 jogadores)</h2>
+        <p>Permissão no jogo: Barão, Mensagens coletivas, Diplomacia, Fóruns escondidos</p>
+        <p>Função: Segunda linha de comando. Ajudam a liderar, convidar, organizar fórum, diplomacia.</p>
+        <h3>Título: General de Guerra ou Barão do Oeste, Barão do Leste (divididos por zonas)</h3>
+      
+        <h2>⚔️ COMANDANTES DE ATAQUE / DEFESA</h2>
+        <p>Permissões no jogo: Mensagens coletivas, Moderador no fórum interno, Fóruns escondidos</p>
+        <p>Função: Coordenar operações ofensivas e defensivas.</p>
+        <h3>Títulos:</h3>
+        <p>Comandante Ofensivo</p>
+        <p>Comandante Defensivo</p>
+        
+        <h2>📬 DIPLOMATA</h2>
+        <p>Permissão no jogo: Diplomacia, Mensagens coletivas</p>
+        <p>Função: Tratar de alianças, PNA, e relações externas.</p>
+        <h3>Título: Embaixador da WB</h3>
+        
+        <h2>🧠 ESTRATEGAS / ANALISTAS</h2>
+        <p>Permissão no jogo: Moderador no fórum interno</p>
+        <p>Função: Criar planos de ataque, defesa, gerir simuladores, organizar fórum estratégico.</p>
+        <h3>Título: Estratégia Avançada</h3>
+        
+        <h2>🔥 SPRINTERS / INICIADORES RÁPIDOS</h2>
+        <p>Permissão no jogo: Nenhuma (a não ser que provem valor).</p>
+        <p>Função: Jogadores ativos no arranque do mundo que sobem rapidamente.</p>
+        <h3>Título: Sprinter WB</h3>
+        
+        <h2>🏹 GUERREIROS / MEMBROS ATIVOS</h2>
+        <p>Permissão no jogo: Membro de confiança (caso estejam ativos e participem nas estratégias).</p>
+        <p>Função: Executar ordens de ataque/defesa, ajudar no crescimento coletivo.</p>
+        <h3>Título: Guerreiro da Tribo</h3>
+        
+        <h2>🛌 EM TESTE / OBSERVAÇÃO</h2>
+        <p>Permissão no jogo: Nenhuma</p>
+        <p>Função: Jogadores a serem avaliados ou pouco ativos.</p>
+        <h3>Título: Em Observação ou Recruta WB</h3>
+      </section>
+    </main>
+
+    <footer>
+    War Brothers [WB] &copy; 2025 - Forjados na guerra, unidos pela lealdade.
+  </footer>
+  <audio id="musicaFundo" src="musica.mp3" loop></audio>
+
+<script>
+  const musica = document.getElementById("musicaFundo");
+
+  function iniciarMusica() {
+    musica.play().catch(e => {
+      console.log("Não foi possível tocar a música automaticamente:", e);
+    });
+    // Remove os event listeners para não disparar várias vezes
+    document.removeEventListener("click", iniciarMusica);
+    document.removeEventListener("touchstart", iniciarMusica);
+  }
+
+  // Adiciona eventos para o primeiro clique ou toque do utilizador
+  document.addEventListener("click", iniciarMusica);
+  document.addEventListener("touchstart", iniciarMusica);
+</script>
+
+
+</body>
+</html>
